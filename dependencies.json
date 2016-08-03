@@ -1,0 +1,127 @@
+{
+    "version": "1.0.0",
+    "components": [
+        {
+            "name": "class",
+            "type": "core",
+            "dependencies": [
+                "module",
+                "eg"
+            ]
+        },
+        {
+            "name": "component",
+            "type": "core",
+            "dependencies": [
+                "module",
+                "eg"
+            ]
+        },
+        {
+            "name": "rotate",
+            "type": "extension",
+            "path": "customEvent",
+            "dependencies": [
+                "module",
+                "eg"
+            ]
+        },
+        {
+            "name": "scrollEnd",
+            "type": "extension",
+            "path": "customEvent",
+            "dependencies": [
+                "module",
+                "eg"
+            ]
+        },
+        {
+            "name": "eg",
+            "type": "core",
+            "dependencies": [
+                "module"
+            ]
+        },
+        {
+            "name": "flicking",
+            "type": "component",
+            "dependencies": [
+                "module",
+                "eg",
+                "class",
+                "cssPrefix",
+                "movableCoord",
+                "rotate",
+                "scrollEnd"
+            ]
+        },
+        {
+            "name": "css",
+            "type": "extension",
+            "path": "hook",
+            "dependencies": [
+                "module",
+                "eg"
+            ]
+        },
+        {
+            "name": "animate",
+            "type": "extension",
+            "path": "hook",
+            "dependencies": [
+                "module",
+                "eg"
+            ]
+        },
+        {
+            "name": "infiniteGrid",
+            "type": "component",
+            "libraries": [
+                "outlayer"
+            ],
+            "dependencies": [
+                "module",
+                "eg",
+                "cssPrefix",
+                "class",
+                "component",
+                "persist"
+            ]
+        },
+        {
+            "name": "movableCoord",
+            "type": "component",
+            "libraries": [
+                "hammer.js"
+            ],
+            "dependencies": [
+                "module",
+                "eg",
+                "class",
+                "cssPrefix",
+                "rotate",
+                "scrollEnd"
+            ]
+        },
+        {
+            "name": "persist",
+            "type": "extension",
+            "path": "plugin",
+            "dependencies": [
+                "module",
+                "eg"
+            ]
+        },
+        {
+            "name": "visible",
+            "type": "component",
+            "dependencies": [
+                "module",
+                "eg",
+                "class",
+                "cssPrefix",
+                "scrollEnd"
+            ]
+        }
+    ]
+}
