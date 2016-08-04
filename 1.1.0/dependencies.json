@@ -1,0 +1,72 @@
+{
+	"version" : "1.1.0",
+	"components" : [
+		{
+			"name": "eg",
+			"type": "core",
+			"dependencies": ["module"]
+		},
+		{
+			"name": "class",
+			"type": "core",
+			"dependencies": ["module", "eg"]
+		},
+		{
+			"name": "component",
+			"type": "core",
+			"dependencies": ["module", "eg", "class"]
+		},
+		{
+			"name": "movableCoord",
+			"type": "component",
+			"packages": ["hammer.js"],
+			"dependencies": ["module", "eg", "class", "component"]
+		},
+		{
+			"name": "flicking",
+			"type": "component",
+			"dependencies": ["module", "eg", "class", "component", "css", "movableCoord"]
+		},
+		{
+			"name": "visible",
+			"type": "component",
+			"dependencies": ["module", "eg", "class", "component"]
+		},
+		{
+			"name": "infiniteGrid",
+			"type": "component",
+			"packages": ["outlayer"],
+			"dependencies": ["module", "eg", "class", "component"]
+		},
+		{
+			"name": "persist",
+			"type": "extension",
+			"path": "plugin",
+			"dependencies": ["module", "eg"]
+		},
+		{
+			"name": "css",
+			"type": "extension",
+			"path": "hook",
+			"dependencies": ["module", "eg"]
+		},
+		{
+			"name": "animate",
+			"type": "extension",
+			"path": "hook",
+			"dependencies": ["module", "eg", "css"]
+		},
+		{
+			"name": "rotate",
+			"type": "extension",
+			"path": "customEvent",
+			"dependencies": ["module", "eg"]
+		},
+		{
+			"name": "scrollEnd",
+			"type": "extension",
+			"path": "customEvent",
+			"dependencies": ["module", "eg"]
+		}
+	]
+}
