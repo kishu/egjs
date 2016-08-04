@@ -1,5 +1,5 @@
 {
-	"packages" : [
+	"libraries" : [
 		{
 			"name": "hammer.js",
 			"dependencies": ["bower_components/hammer.js/hammer.js"]
